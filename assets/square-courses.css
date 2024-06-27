@@ -1,0 +1,301 @@
+.course-meta, .course-schedule ul, .course-details-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-meta li, .course-schedule ul li, .course-details-sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.course-meta li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.entry-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.entry-content {
+    margin-bottom: 40px;
+}
+
+.course-featured-image {
+    border: 2px solid;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.course-booking.fully-booked {
+    font-weight: bold;
+    color: red;
+}
+
+.course-booking.limited-spots {
+    font-weight: bold;
+    color: orange;
+}
+
+.button.book-now, .button.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.button.book-now:hover {
+    box-shadow: #898989 0px 0px 7px 2px;
+}
+
+.button.learn-more {
+    background-color: #333;
+    margin: 15px 0;
+}
+
+.button.learn-more:hover {
+    box-shadow: #898989 0px 0px 7px 2px;
+}
+
+.course-schedule h2, .course-details-sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e2e2e2;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.booking-container .client-details {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 15px;
+}
+
+.booking-container .booking-details {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+    border-left: 1px solid #e2e2e2;
+}
+
+@media (max-width: 768px) {
+    .booking-container .client-details, .booking-container .booking-details {
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-left: none;
+    }
+}
+
+.notice-success {
+    padding: 20px;
+    background-color: #04aa6d;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.course-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-schedule th, .course-schedule td {
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    text-align: left;
+}
+
+.course-schedule th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.course-schedule td {
+    background-color: #ffffff;
+}
+
+.course-schedule tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-filters, .course-filter {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.course-item {
+    flex: 1 1 calc(33.333% - 30px); /* Adjusted to use flexbox for wrapping */
+    max-width: calc(33.333% - 30px); /* Ensure a maximum width for the course items */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .course-item {
+        flex: 1 1 calc(50% - 30px); /* Two items per row */
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-item {
+        flex: 1 1 calc(100% - 30px); /* One item per row */
+        max-width: calc(100% - 30px);
+    }
+}
+
+.course-link, .course-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-item a:hover {
+    text-decoration: none; /* Ensure underline is removed on hover */
+}
+
+.course-thumbnail {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-title, .course-item h2 {
+    margin: 15px 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.course-dates, .course-category {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.course-item .course-dates a, .course-item .course-category a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.course-item .course-dates a:hover, .course-item .course-category a:hover {
+    text-decoration: none;
+}
+
+.category-filter-div {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.category-filter-div img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.category-filter-div:hover img {
+    transform: scale(1.05);
+}
+
+.category-filter-div.active img {
+    border: 4px solid;
+}
+
+@media (max-width: 600px) {
+    .course-list > div {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .course-list > div {
+        flex: 0 0 45%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .course-list > div {
+        flex: 0 0 30%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .course-list > div {
+        flex: 0 0 22%;
+    }
+}
+
+.course-availability {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.course-availability.available {
+    color: green;
+}
+
+.course-availability.limited-availability {
+    color: orange;
+}
+
+.course-availability.fully-booked {
+    color: red;
+}
